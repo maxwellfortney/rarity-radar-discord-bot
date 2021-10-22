@@ -1,6 +1,10 @@
 import { Client, Intents, MessageEmbed } from 'discord.js';
 import fetch from 'node-fetch';
 
+import * as dotenv from "dotenv";
+
+dotenv.config();
+
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 const prefix = "!"
@@ -81,4 +85,4 @@ client.on("messageCreate", async (message) => {
     }
 })
 
-client.login("OTAwODg0MzA1MjI2NjM3MzYz.YXHz4w.0nEGcjxbiG0x6SkhzzFqAbfEQZM")
+client.login(process.env.BOT_TOKEN)
