@@ -1,0 +1,14 @@
+{
+    "name": "rarity-radar-discord-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "dependencies": {
+        "discord.js": "^13.2.0",
+        "node-fetch": "^3.0.0"
+    }
+}
